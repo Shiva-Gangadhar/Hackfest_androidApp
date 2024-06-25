@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/back_final"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:scrollbars="none"
+    tools:context=".ui.timelinefragment.TimelineFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:foreground="@drawable/tl_bar_background"
+            android:textColor="@color/pitchblack" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end"
+                        android:text="Registration Begins"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="-Unstop"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/left1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+
+                    android:translationX="1000dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="12:00AM"
+
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="6 April 2024"
+
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/right1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="-1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="11:59PM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="11 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Registration Ends"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="-Unstop"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end"
+                        android:text="Shortlisting"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="-Online"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lt2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="12:00AM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="12 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/rght"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="-1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="11:59PM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="19 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Hack Begins"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="-IIT(ISM) Dhanbad"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end"
+                        android:text="Hack Ends"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="-IIT(ISM) Dhanbad"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lft3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="12:00PM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="21 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/rht3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="-1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="06:00AM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="21 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Submission Begins"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="-IIT(ISM) Dhanbad"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end"
+                        android:text="Submission Ends"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="-IIT(ISM) Dhanbad"
+                        android:textColor="@color/pitchblack"
+                        android:textSize="12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/pitchblack"
+                    app:drawableLeftCompat="@drawable/timeline_circles" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/l3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/jh"
+                    android:orientation="vertical"
+                    android:translationX="1000dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="12:00PM"
+                        android:textColor="@color/pitchblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="21 April 2024"
+                        android:textColor="@color/pitchblack" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </FrameLayout>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="29"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Mar"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="CodeIsm"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="30"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Mar"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Start PS Evaluations"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="1-2"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Mar"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Arka"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="3"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Outside Registeration Close"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="4"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="End Evaluation of PS"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="5"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Announcement of Outside Participating Teams"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="6"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Announcemnet of Inside Participating team"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="7"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Opening Ceremony"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:gravity="center_vertical">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="8-9"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/lexend_bold"-->
+    <!--                        android:text="Apr"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@drawable/qr_card"-->
+    <!--                    android:padding="20dp">-->
+
+    <!--                    <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:fontFamily="@font/lexend"-->
+    <!--                        android:text="Hack"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="25dp" />-->
+    <!--                </RelativeLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:elevation="20dp"-->
+    <!--            app:cardCornerRadius="20dp">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/qr_card">-->
+
+    <!--                <TextView
+    android:textColor="@color/pitchblack"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:fontFamily="@font/lexend_bold"-->
+    <!--                    android:text="Additional events will be announced on the notice board."-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="25dp" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+
+    <!--    </LinearLayout>-->
+
+
+</ScrollView>

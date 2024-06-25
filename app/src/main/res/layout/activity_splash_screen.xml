@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+
+    android:id="@+id/splash_screen">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hf"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/hf_trans" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/logo"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:fontFamily="@font/lexend_semi_bold"
+            android:gravity="center"
+
+            android:text="H"
+            android:textAlignment="center"
+            android:textColor="@color/gblue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/gred"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="C"
+            android:textAlignment="center"
+            android:textColor="@color/gyellow"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="K"
+            android:textAlignment="center"
+            android:textColor="@color/ggreen"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="F"
+            android:textAlignment="center"
+            android:textColor="@color/gblue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="E"
+            android:textAlignment="center"
+            android:textColor="@color/gred"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="@color/gyellow"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="@color/ggreen"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
